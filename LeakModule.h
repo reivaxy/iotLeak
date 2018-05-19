@@ -5,6 +5,7 @@
  */
  
 #pragma once 
+#include "config.h"
 #include <XIOTModule.h>
  
 class LeakModule:public XIOTModule {
@@ -12,6 +13,6 @@ public:
   LeakModule(LeakConfigClass* config, int displayAddr, int displaySda, int displayScl);
   
 protected:
-  void _customRegistrationData(char *data);
+  char* _customRegistrationData() override;
   
 };

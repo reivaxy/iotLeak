@@ -21,11 +21,11 @@ void LeakConfigClass::initFromDefault() {
 }
 
 
-void setAutoWake(int delay) {
+void LeakConfigClass::setAutoWake(int delay) {
    _getDataPtr()->autoWake = delay;
 }
 
-int getAutoWake() {
+int LeakConfigClass::getAutoWake() {
    return _getDataPtr()->autoWake;
 }
 /**

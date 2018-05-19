@@ -6,7 +6,7 @@
  
 
 #include <stdio.h>
-#include <LeakModule.h>
+#include "LeakModule.h"
 
 #include "config.h"
 
@@ -22,8 +22,9 @@ void setup(){
   
   config = new LeakConfigClass((unsigned int)CONFIG_VERSION, (char*)CONFIG_NAME);
   config->init();
+  config->setUiClassName("leakUIClass");
   
-  module = new XIOTModule(config, 0x3C, D5, D6);
+  module = new LeakModule(config, 0x3C, D5, D6);
      
 }
 
