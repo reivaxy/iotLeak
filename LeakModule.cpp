@@ -10,7 +10,7 @@ LeakModule::LeakModule(LeakConfigClass* config, int displayAddr, int displaySda,
 }
 
 char* LeakModule::_customRegistrationData() {
-  Serial.println("LeakModule::_customRegistrationData");
+//  Serial.println("LeakModule::_customRegistrationData");
   char* data = (char *)malloc(100);
   sprintf(data, "{\"autoWake\":%d}", ((LeakConfigClass*)_config)->getAutoWake());
   return data;  
