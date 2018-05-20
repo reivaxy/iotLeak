@@ -9,7 +9,7 @@
 #include <XIOTConfig.h>
 #include <XUtils.h>
 
-#define CONFIG_VERSION 5
+#define CONFIG_VERSION 20
 #define CONFIG_NAME "Leak"
 
 #define DEFAULT_AUTOWAKE_VALUE 0
@@ -23,6 +23,7 @@ class LeakConfigClass:public ModuleConfigClass {
 public:
   LeakConfigClass(unsigned int version, const char* name);
   void initFromDefault();
+  const char* getDefaultUIClassName() override;
 
   void setAutoWake(int);
   int getAutoWake(void);

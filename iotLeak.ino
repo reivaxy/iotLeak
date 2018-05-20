@@ -18,11 +18,10 @@ LeakModule* module;
 
 void setup(){
   Serial.begin(9600);
-  delay(100);
+  delay(500); // time to connect serial
   
   config = new LeakConfigClass((unsigned int)CONFIG_VERSION, (char*)CONFIG_NAME);
   config->init();
-  config->setUiClassName("leakUIClass");
   
   module = new LeakModule(config, 0x3C, D5, D6);
      

@@ -20,6 +20,10 @@ void LeakConfigClass::initFromDefault() {
   setAutoWake(DEFAULT_AUTOWAKE_VALUE);
 }
 
+const char* LeakConfigClass::getDefaultUIClassName() {
+  Serial.println("LeakConfigClass::getDefaultUIClassName");
+  return "leakUIClass";
+}
 
 void LeakConfigClass::setAutoWake(int delay) {
    _getDataPtr()->autoWake = delay;
