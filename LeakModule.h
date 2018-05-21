@@ -10,9 +10,8 @@
  
 class LeakModule:public XIOTModule {
 public:
-  LeakModule(LeakConfigClass* config, int displayAddr, int displaySda, int displayScl);
   
 protected:
-  char* _customRegistrationData() override;
+  char* _customData() override;
   
 };

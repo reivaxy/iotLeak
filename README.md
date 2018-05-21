@@ -4,7 +4,11 @@ This is the second slave module for the iotinator project, its purpose will be t
 
 For now, it's a simple stub to help create more complex slave modules, like iotSwitch, but I needed two different modules.
 
-This one uses a class that extends the XIOTModule class.
+This one uses a class that extends the XIOTModule class, which allows for providing for instance custom data when registering with master, so that it will be available in the UI with no more requests.
+
+For now, the extension only provides dummy custom data, to illustrate how it can be done.
+
+Specific API endpoints for this module can be implemented in the .ino file.
 
 You'll need to clone these repositories into your arduino "libraries" directory to be able to compile:
 
