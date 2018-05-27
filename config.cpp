@@ -7,7 +7,7 @@
 #include "config.h"
 
 
-LeakConfigClass::LeakConfigClass(unsigned int version, const char* name):ModuleConfigClass(version, name, sizeof(LeakConfigStruct)) {
+LeakConfigClass::LeakConfigClass(unsigned int version, const char* name):ModuleConfigClass(version, "iotleak", name, sizeof(LeakConfigStruct)) {
 }
 
 /**

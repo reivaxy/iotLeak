@@ -9,8 +9,8 @@
 #include <XIOTConfig.h>
 #include <XUtils.h>
 
-#define CONFIG_VERSION 20
-#define CONFIG_NAME "Leak"
+#define CONFIG_VERSION 1
+#define MODULE_NAME "Leak"
 
 #define DEFAULT_AUTOWAKE_VALUE 0
 
